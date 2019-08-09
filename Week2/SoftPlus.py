@@ -1,17 +1,14 @@
 # Hàm SoftPlus
 
 # @author: Quang Thin Tran
+import math
 
 dataset = [1,4,-6,9,-3]
-alpha = 0.1
-def PReLU(data,alpha):
+def SoftPlus(data):
     result = []
-    for i in data:
-        if i<0:
-            result.append(round(alpha*int(i),3))
-        else:
-            result.append(i)
+    for x in data:
+        result.append(math.log(1+math.exp(x)))
     return result
 
-result = PReLU(dataset,alpha)
+result = SoftPlus(dataset)
 print(result)
