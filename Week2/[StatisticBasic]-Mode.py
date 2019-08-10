@@ -4,6 +4,7 @@
 #Lý thuyết:
 import random
 from collections import Counter
+import numpy as np
 #Hàm tạo data:
 def makeData(size):
     data = []
@@ -33,3 +34,7 @@ def Mode(data):
             mode.append(num[0])
     return mode
 print(Mode(dataset))
+#Sử dụng numpy 
+data_set = np.array([10,12,11,14,10,12,14,11,10,12,14,15])
+result = mode(data_set)
+print(result)
