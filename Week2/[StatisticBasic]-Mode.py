@@ -33,7 +33,7 @@ def Mode(data):
         if num[1]==maxcount:
             mode.append(num[0])
     return mode
-print(Mode(dataset))
+print("Mode của data:",Mode(dataset))
 #Sử dụng numpy 
 data_set = np.array([10,12,11,14,10,12,14,11,10,12,14,15])
 result = mode(data_set)
