@@ -29,7 +29,8 @@ print("File World.txt có tồn tại không?",check_2)
 '''
 #*-------------------------------------------------------------
 # Mở file Iris.csv
-filePath = "Iris.csv"
+# đường dẫn file Iris.csv
+filePath = "D:\Python\[AI Vietnam]\Iris.csv"
 file = open(filePath,mode="r")
 lines = file.readlines()
 '''
